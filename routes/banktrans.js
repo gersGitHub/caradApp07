@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 var mongojs = require("mongojs");
-var db = mongojs('mongodb://cardb:NvIEWzpvuy5JTFIyR46l7JXZJhsV6Cs05H4U8naF37BAhRZ6ewOagmMKEbBJtrcEyyTdmQxlM7nnrzSFZ07msA==@cardb.documents.azure.com:10250/?ssl=true', ["banktrans"]);
+var db = mongojs('mongodb://cardb:NvIEWzpvuy5JTFIyR46l7JXZJhsV6Cs05H4U8naF37BAhRZ6ewOagmMKEbBJtrcEyyTdmQxlM7nnrzSFZ07msA==@cardb.documents.azure.com:10250/?ssl=true');
 
 // Get All BankTrans
 router.get("/banktrans", function(req, res, next){
